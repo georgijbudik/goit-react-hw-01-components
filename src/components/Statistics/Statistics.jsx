@@ -8,7 +8,7 @@ import {
 } from './Statistics.styled';
 import PropTypes from 'prop-types';
 
-export const Statistics = ({ title, stats }) => {
+const Statistics = ({ title, stats }) => {
   return (
     <Section>
       {title && <Title>{title}</Title>}
@@ -35,3 +35,5 @@ Statistics.propTypes = {
     })
   ).isRequired,
 };
+
+export default Statistics;
